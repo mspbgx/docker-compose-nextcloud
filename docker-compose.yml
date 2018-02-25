@@ -3,6 +3,7 @@ version: '3.1'
 services:
   db:
     image: mspbgx/centos-mariadb
+    container_name: nextcloud_db
     restart: always
     volumes:
       - /opt/docker/nextcloud/data/db:/var/lib/mysql
@@ -14,6 +15,7 @@ services:
 
   app:
     image: nextcloud
+    container_name: nextcloud_app
     ports:
       - 8080:80
     links:
