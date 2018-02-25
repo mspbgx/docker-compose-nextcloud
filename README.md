@@ -1,5 +1,8 @@
 # Docker Compose file for nextcloud
 
-## Author
+[![](https://images.microbadger.com/badges/version/mspbgx/centos-mariadb.svg)](https://microbadger.com/images/mspbgx/centos-mariadb "Get your own version badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/mspbgx/centos-mariadb.svg)](hub)
+[![Docker Stars](https://img.shields.io/docker/stars/mspbgx/centos-mariadb.svg)](hub)
 
-Created in 2018 by [Maximilian Sparenberg](https://github.com/mspbgx).
+
+**MAINTAINER:** Maximilian Sparenberg <sparenberg@openenv.de>
