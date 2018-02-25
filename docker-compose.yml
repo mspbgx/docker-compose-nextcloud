@@ -1,15 +1,11 @@
 version: '3.1'
 
-volumes:
-  app:
-  db:
-
 services:
   db:
     image: mspbgx/centos-mariadb
     restart: always
     volumes:
-      - db:/var/lib/mysql
+      - /opt/docker/nextcloud/data/db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=ABC123xyz
       - MYSQL_DATABASE=nextcloud
@@ -23,5 +19,5 @@ services:
     links:
       - db
     volumes:
-      - app:/var/www/html
+      - /opt/docker/nextcloud/data/app:/var/www/html
     restart: always
